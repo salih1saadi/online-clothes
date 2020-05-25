@@ -1,0 +1,6 @@
+export const ShopActionTypes = {
+  ADD_CATEGORY: 'ADD_CATEGORY',
+  SHOW_CATEGORY: 'SHOW_CATEGORY',
+  SHOW_PRODUCTS: 'SHOW_PRODUCTS'
+
+};
