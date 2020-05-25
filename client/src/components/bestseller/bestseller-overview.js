@@ -11,8 +11,7 @@ const BestsellerOverview = ({ products }) => (
   <div className='collections-overview'>
  
 
-    	{products.filter((item, idx) => idx < 1)
-          .map(item => (
+    	{products.map(item => (
           <Bestseller key={item._id} item={item} products={products} />
         ))}
     
@@ -21,7 +20,6 @@ const BestsellerOverview = ({ products }) => (
 );
 
 const mapStateToProps = createStructuredSelector({
-  collections: selectCollectionsForPreview,
   products: selectProducts
 });
 
