@@ -62,12 +62,7 @@ app.use('/admin/products', products);
 
 
 
-app.get('/',(req, res)=>{
 
-res.send('it is working');
-
-
-})
 
 
 if (process.env.NODE_ENV === 'production') {
