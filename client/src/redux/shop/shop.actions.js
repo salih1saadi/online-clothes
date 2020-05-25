@@ -4,8 +4,8 @@ import {ShopActionTypes} from './shop.types';
 
 export function addProduct(productData, img) {
 	return dispatch =>{
-    return axios.post(`https://hidden-bayou-19736.herokuapp.com/admin/products/add`, productData)
-    return axios.post(`https://hidden-bayou-19736.herokuapp.com/admin/products/add`, img)
+    return axios.post(`clothes-online.herokuapp.com/admin/products/add`, productData)
+    return axios.post(`clothes-online.herokuapp.com/admin/products/add`, img)
         
 }
 
@@ -13,7 +13,7 @@ export function addProduct(productData, img) {
 
 export function addCategory(categoryData) {
 	return dispatch =>{
-    return axios.post(`https://hidden-bayou-19736.herokuapp.com/admin/categories/create`, categoryData)
+    return axios.post(`clothes-online.herokuapp.com/admin/categories/create`, categoryData)
         
 }
 
@@ -21,7 +21,7 @@ export function addCategory(categoryData) {
 
 export function removeProduct(deletedData) {
     return dispatch =>{
-    return axios.post(`https://hidden-bayou-19736.herokuapp.com/admin/products/delete/${deletedData}`, deletedData)
+    return axios.post(`clothes-online.herokuapp.com/admin/products/delete/${deletedData}`, deletedData)
         
 }
 
@@ -33,7 +33,7 @@ export function removeProduct(deletedData) {
 
 export function showCategory1(){
     return(dispatch)=>{
-        return  axios.get("https://hidden-bayou-19736.herokuapp.com/admin/categories").then((response)=>{
+        return  axios.get("clothes-online.herokuapp.com/admin/categories").then((response)=>{
             dispatch(change(response.data));
         })
     }
@@ -48,7 +48,7 @@ export function change(categories){
 
 export function showProducts(){
     return(dispatch)=>{
-        return  axios.get("https://hidden-bayou-19736.herokuapp.com/admin/products").then((response)=>{
+        return  axios.get("clothes-online.herokuapp.com/admin/products").then((response)=>{
             dispatch(changePro(response.data));
         })
     }
