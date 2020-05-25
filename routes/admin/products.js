@@ -59,7 +59,7 @@ let filename = file.name;
 
  
 
-file.mv('../client/public/assets/' + filename, (err)=>{
+file.mv('/client/public/assets/' + filename, (err)=>{
  
  if(err) throw err;
 
