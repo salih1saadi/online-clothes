@@ -10,7 +10,7 @@ export const setCurrentUser = user => ({
 
 export function userSignupRequest(userData) {
 	return dispatch =>{
-    return axios.post(`https://clothes-online.herokuapp.com/users/register`, userData)
+    return axios.post(`https://hidden-bayou-19736.herokuapp.com/users/register`, userData)
         
 }
 
@@ -28,7 +28,7 @@ export function logout() {
 
 export function userLogin(userData) {
 	return dispatch =>{
-    return axios.post(`https://clothes-online.herokuapp.com/users/login`, userData).then(res =>{
+    return axios.post(`https://hidden-bayou-19736.herokuapp.com/users/login`, userData).then(res =>{
     	const token = res.data.token;
     	localStorage.setItem('jwtToken', token);
     	setAuthorizationToken(token);
