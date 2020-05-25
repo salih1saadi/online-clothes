@@ -15,7 +15,7 @@ const HomePage = ({ match })=>(
 	<hr />
 	<Directory />
 	<hr />
-	<Route path={`${match.path}`} component={Bestseller} />
+	
 	<Bestseller />
 	<hr />
 	<SocialButtonsPage />
