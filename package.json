@@ -28,7 +28,7 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "stripe": "^8.55.0",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
